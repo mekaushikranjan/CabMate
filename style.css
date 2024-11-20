@@ -1,0 +1,370 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4CAF50; /* Green background */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar .left img {
+    width: 40px; /* Adjust logo size */
+    margin-right: 10px;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.navbar .signup {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.navbar .signup:hover {
+    background-color: #f1f1f1;
+}
+
+/* Header Section */
+header img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Booking Section */
+.booking-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.booking-form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.booking-form input,
+.booking-form select,
+.booking-form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.booking-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.booking-form button:hover {
+    background-color: #45a049;
+}
+
+/* Cab Details Section */
+.cab-details {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.cab-details h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+.cab-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Feature Section 1 - Choose Your Perfect Ride */
+.feature-choose {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    flex-direction: row; /* Image left, text right */
+}
+
+.image-choose {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.image-choose img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-choose {
+    flex: 1;
+}
+
+.text-choose h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.text-choose p {
+    font-size: 24px;
+    line-height: 2;
+    color: #555;
+}
+
+.text-choose button {
+    font-size: 18px;
+    padding: 12px 25px;
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-choose button:hover {
+    background-color: #45a049;
+}
+
+/* Feature Section 2 - Live Monitoring Taxi Service */
+.feature-monitor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    flex-direction: row-reverse; /* Image right, text left */
+}
+
+.image-monitor {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 20px; /* Space between text and image */
+}
+
+.image-monitor img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-monitor {
+    flex: 1;
+}
+
+.text-monitor h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.text-monitor p {
+    font-size: 24px;
+    line-height: 2;
+    color: #555;
+}
+
+.text-monitor button {
+    font-size: 18px;
+    padding: 12px 25px;
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-monitor button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .left,
+    .navbar .right {
+        margin-bottom: 10px;
+    }
+
+    .booking-container {
+        flex-direction: column;
+    }
+
+    .booking-form,
+    .cab-details {
+        flex: unset;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header img {
+        height: 200px;
+    }
+
+    .feature-choose,
+    .feature-monitor {
+        padding: 20px 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-column {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .booking-container {
+        flex-direction: column;
+    }
+
+    .booking-form,
+    .cab-details {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .feature-choose,
+    .feature-monitor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-choose,
+    .text-monitor {
+        text-align: center;
+    }
+
+    .text-choose button,
+    .text-monitor button {
+        margin: 20px auto 0 auto;
+        display: block;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .footer-column {
+        margin: 0 20px 20px 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1440px) {
+    .booking-container {
+        gap: 15px;
+    }
+
+    header img {
+        height: 400px;
+    }
+
+    .feature-choose img,
+    .feature-monitor img {
+        height: auto;
+        max-height: 300px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .footer-container {
+        justify-content: space-around;
+    }
+}
+
+footer {
+    background-color: #4CAF50; /* Full green background */
+    padding: 30px 20px;
+    text-align: center;
+    color: black; /* Dark black text for better contrast */
+}
+footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer .footer-column {
+    margin: 10px;
+    text-align: left;
+    flex: 1 1 200px; /* Make columns responsive */
+}
+footer .footer-column h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black; /* Make headings dark black */
+    font-weight: bold; /* Optionally make the headings bold */
+}
+
+footer .footer-column a {
+    display: block;
+    text-decoration: none;
+    color: black; /* Make links dark black */
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+footer .footer-column a:hover {
+    color: white; /* Change the hover color */
+}
